@@ -10,7 +10,7 @@ var engine, world;
 var rand;
 
 
-this.rain= Bodies.circle(x,y,5,options)
+
 
 var thunderCreatedFrame=0;
 
@@ -20,10 +20,9 @@ function preload(){
     thunder3 = loadImage("thunderbolt/3.png");
     thunder4 = loadImage("thunderbolt/4.png");
 
-    batAnimation = loadAnimation("bat/bat1.png","bat/bat2.png","bat/bat3.png",
-                        "bat/bat4.png","bat/bat5.png","bat/bat6.png",
-                        "bat/bat7.png","bat/bat8.png","bat/bat9.png",
-                        "bat/bat10.png","bat/bat11.png","bat/bat12.png");
+    batAnimation = loadAnimation("bat/bat1.png","bat/bat2.png","bat/bat3.png","bat/bat4.png",
+    "bat/bat5.png","bat/bat6.png","bat/bat7.png","bat/bat8.png","bat/bat9.png",
+    "bat/bat10.png","bat/bat11.png","bat/bat12.png");
    
 }
 
@@ -33,6 +32,7 @@ function setup(){
 
     createCanvas(400,700);
     umbrella = new Umbrella(200,500);
+    
 
     //create drops
    
